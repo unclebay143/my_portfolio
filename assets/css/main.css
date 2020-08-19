@@ -189,10 +189,10 @@ a{
 
 .about-me{
   text-align: center;
+  height: 100vh;
 }
 
 .about {
-  background-color: ;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -207,21 +207,20 @@ a{
 .section-3{
   position: relative;
   top: 3rem;
+  left:3rem;
   width: 70%;
 }
 
 .section-3 span{
   color: #343333;  
-  font-size: 2rem;
+  font-size: 1.9rem;
   word-wrap:wrap;
 }
 
 .my_links{
   display: flex;
   position: relative;
-  /* padding-top: 5px; */
   padding-left: 5rem;
-  /* padding-bottom: 13px; */
 }
 
 .my_links ul{
@@ -234,15 +233,26 @@ a{
 .my_links a{
   cursor: pointer !important;
   color: #888888 !important;
-  /* margin-top: 9px !important; */
-  padding:9px;
   border-radius: 3px;
 }
 
 .my_links a:hover{
-  background-color: #1b242f;
-  color: #fff !important;
+  color: #011731 !important;
 }
+
+/* Social Link Styles */
+
+.social-link{
+  padding-top:20px;
+  width: 40px;
+  height:40px;
+}
+
+.social-link:hover{
+  width: 44px;
+  height:44px;
+}
+/* Social Link Styles End */
 
 .form{
   display: flex;
@@ -250,6 +260,10 @@ a{
   padding-left: 1rem !important;
   padding-top: -23px;
   margin-bottom: 23px;
+}
+.form span{
+  font-size: 21px;
+  padding: 12px;
 }
 
 .form input{
@@ -267,17 +281,18 @@ a{
 }
 
 .btn{
-  padding: 13px 13px;
-  width: auto;
+  margin-top: 25px;
   border: none;
-  background-color: #fff;
-  color: #15598f;
-  font-size: 23px;
+  background-color: rgb(187, 93, 93);
+  color: white;
+  font-size: 19px;
   cursor: pointer;
+  border-radius: 12px;
+  height: 50px;
+  padding:12px;
 }
 
 .btn:hover{
-  border: 2px solid white !important;
   background-color: #333;
   color: #fff;
 }
