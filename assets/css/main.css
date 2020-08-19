@@ -8,11 +8,16 @@ body{
   background:#f2f5f9;
 }
 
+/* All Link Styles */
+a{
+  text-decoration: none;
+  color: #000000;
+}
 .container{
   
 }
 
-header{
+.top-header{
   background-color: #15598f;
   overflow: hidden;
   color: #fff;
@@ -34,7 +39,11 @@ header{
   align-content: center;
   align-content: center;
   height: 30vh;
-  line-height: ;
+  cursor: pointer;
+}
+
+.top h1:hover{
+  transform: rotate(50deg);
 }
 
 .top-link ul{
@@ -47,7 +56,18 @@ header{
   top: 17px;
 }
 
-.top-link{
+.top-link ul a{
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 6px;
+}
+
+.top-link ul a:hover{
+  border: 2px solid white;
+}
+
+.top-link .collapse-icon{ 
+  display: none;
 
 }
 .intro-1{
@@ -58,7 +78,9 @@ header{
   font-size: 5rem;
   font-weight: 900;
   color: #f2f5f9;
-  line-height: 0.2;
+}
+.intro-1 .section-one h3:hover{
+  border: 0.91px dashed whitesmoke;
 }
 
 .intro-1 .section-one p{
@@ -69,6 +91,10 @@ header{
   padding: 23px;
 }
 
+.intro-1 .section-one p:hover{
+  border: 3px double wheat;
+}
+
 .intro-1 section span{
   font-size: 1.72rem;
   font: x-large;
@@ -76,9 +102,38 @@ header{
   padding: 23px;
   position: relative;
   top: 200px;
+  color: transparent;
 }
 
 .intro-1 .section-two strong{
   font-weight: 100;
   font: large;
 }
+
+  /* Nav Bar Responsive Styles */
+.link-toggle{
+  display: none;
+}
+
+
+
+/* About Section Styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

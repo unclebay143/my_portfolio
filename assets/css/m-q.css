@@ -1,5 +1,39 @@
-@media screen(max-width: 800px){
-  .top{
-    display: block;
+@media only screen and (max-width: 768px) {
+  .top h1{
+    height: 15vh;
+    color: transparent;
   }
+    
+.top-link{
+    display:none;
+  }
+
+.top-link ul{
+  display: relative;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.top-link ul > li a{
+  color: whitesmoke;
+}
+
+.Show {
+    display: flex;
+  }
+    
+.link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+   } 
+.link-toggle:hover{
+  color: #3e3e;  
+}
 }
