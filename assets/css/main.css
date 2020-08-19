@@ -290,6 +290,8 @@ a{
   border-radius: 12px;
   height: 50px;
   padding:12px;
+  outline: none;
+  border-width: none;
 }
 
 .btn:hover{
@@ -297,12 +299,18 @@ a{
   color: #fff;
 }
 
+/* Footer Styles */
+.footer-container{
+}
+/* End of Footer Styles */
 footer{
   text-align:center;
-  font-size: 23px;
-  word-spacing: 4px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 27px;
+  word-spacing: 9px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
   padding-top: 40px;
+  height: 19vh;
 }
 
 
