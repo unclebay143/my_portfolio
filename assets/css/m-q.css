@@ -1,39 +1,107 @@
 @media only screen and (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
   .top h1{
     height: 15vh;
     color: transparent;
   }
     
-.top-link{
-    display:none;
+  .top-link{
+      display:none;
+    }
+
+  .top-link ul{
+    display: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
   }
 
-.top-link ul{
-  display: relative;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-}
+  .top-link ul > li a{
+    color: whitesmoke;
+  }
 
-.top-link ul > li a{
-  color: whitesmoke;
-}
+  .Show {
+      display: flex;
+    }
+      
+  .link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      top: 30px;
+      cursor: pointer;
+      font-size: 2rem;
+    } 
+  .link-toggle:hover{
+    color: #3e3e;  
+  }
+  .form, .my_links{
+    display: block;
+    padding-left: 0px;
+  }
+  .about{
+    margin: 0;
+  }
+  .about-me h4{
+    font-size:58px;
+    text-align: center;
+    padding:12px;
+  }
+  .me{
+    flex-direction: column;
+    width: 100%;
+    padding:0px;
+  }
 
-.Show {
+  .me img{
+    transition: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .section-3{
+    word-wrap: break-word;
+    text-align: center;
+    background: red;
+    justify-content: center;
+    overflow: hidden;
+    width: auto;
+  }
+
+  .my_links{
     display: flex;
+    flex-direction: column;
+    top: 90px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 50px;
+    row-gap: 23px;
+    font-size: 20px;
   }
-    
-.link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    top: 30px;
-    cursor: pointer;
-    font-size: 2rem;
-   } 
-.link-toggle:hover{
-  color: #3e3e;  
-}
+
+  .form input{
+    width: 89%;
+    padding-top: 23px;
+    margin-right: 23px;
+    border: 2px solid red;
+  }
+  .btn{
+    margin-top: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: 53px;
+    border-radius: 6px;
+    background-color: burlywood;
+  }
 }

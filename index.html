@@ -8,7 +8,7 @@
   <meta name="description" content="junior frontend developer react js html css javacript portfolio">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/m-q.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
   <title>Ayodele Samuel Adebayo --Portfolio</title>
 </head>
 <body>
@@ -17,13 +17,18 @@
     <!-- Page Head -->
     <header class="top-header">
       <!-- Logo and Nav Link Start -->
+           <!-- <p class="tiny tiny-left tiny-1 g">Django</p> -->
+            <p class="tiny tiny-right tiny-1 b">Python</p>
+            <p class="tiny tiny-c tiny-1 r">MySQL</p>
       <div class="top">
         <h1>A.S.A</h1>
         <nav class="top-link" id="top-nav">
           <ul class="links">
-            <li><a href="#about">About</a></li>
+            
+            <li><a href="#" class='skillbutton' onlclick='showSkill();'>My Skills</a></li>
             <li><a href="#">Hire me</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#about">About</a></li>
+           
             <!-- <li><a href="#">Links</a></li> -->
           </ul>
         </nav>
@@ -34,23 +39,75 @@
       <!-- End of Logo and Nav Link Section -->
       <div class="intro-1">
         <section class="section-one">
+          <!-- <p class="tiny tiny-left tiny-1 g">Version Control</p> -->
+          <p class="tiny tiny-c tiny-1 y">html</p>
+          <p class="tiny tiny-right tiny-1 r">JavaScript</p>
+          <p class="tiny tiny-left tiny-1 p">css</p>
+          
+
           <h3>Ayodele Samuel Adebayo</h3>
           <p>Junior Frontend Developer</p>
+          <p id='myskill'>Html, Css, JavaScript, React Js, Bootstrap, Git- Version Control, Python, Django</p>
+          <p class="tiny tiny-left tiny-1 g">Django</p>
           <span>I help Companies Transform Their Businesses</span>
-      </section>
+          
+        </section>
+        <p class="tiny tiny-right tiny-2 y">React js</p>
       <section class="section-two">
         <strong>Fellow at -TIIDELab INITIATIVE </strong>
+        <hr class="hr">
+      
       </section>
       </div>
     </header>
     <!-- End of Page -->
-
+    <!-- <div class="me">
+      <img src="/assets/img/me.jpg" alt="">
+    </div> -->
     <!-- About Section -->
     <section class="about-me">
-      <header class="about">
+      <header class="about" id="about">
         <h4>About Me</h4>
+        <div class="me">
+          <img src="/assets/img/me.jpg" alt="">
+          <section class="section-3">
+            <span> 
+              <strong>
+                <b>Ayodele Samuel Adebayo</b>, is a Frontend Junior developer, 
+                using a super-power called Javascript along React Js, Python,
+                Django, Html, Css, Bootstrap, knowledge on Git Version Control, 
+                Netlify, Heroku, Pythonanywhere. having interest in solving complex problems in simple ways, 
+                also having knowledge of Python, Django and MySQL
+              </strong></span>
+          </section>
+        </div>
       </header>
     </section>
+    <div class="my_links">
+      <ul>
+        <li><a href="https://www.facebook.com/unclebay"><i class="fas fa-facebook-f">Facebook</i></a></li>
+        <li><a href="https://www.github.com"><i class="fab fa-github">Github</i></a></li>
+        <li><a href="#about"><i class="fab fa-github">Twitter</i></a></li>
+        <li><a href=""></a></li>
+      </ul>
+      <section>
+        <form name="contact" class="form" netlify>
+          <p>
+                <label><span>Name</span> <input type="text" name="name"></label>
+            </p>
+            <p>
+                <label><span>Email</span> <input type="email" name="email"/></label>
+            </p>
+                <button type="submit" class="btn">Subscribe</button>
+            </p>
+        </form>
+      </section>
+    </div>
+    <div>
+      <footer>
+        <h5>Walk-In Tech &copy;2020</h5>
+      </footer>
+    </div>
   </div>
   <script src="/assets/js/main.js"></script>
 </body>

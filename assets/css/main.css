@@ -46,12 +46,56 @@ a{
   transform: rotate(50deg);
 }
 
+#myskill{
+  font-size: 18px;
+  position: relative;
+  top: px;
+  background-image:linear-gradient(234deg, green, yellow) ;
+}
+
+.tiny{
+  font-size:16px !important;
+  /* display: none; */
+  transition: all 9s ease;
+  color: transparent !important;
+
+}
+.tiny-left{
+  float:left;
+
+}
+
+.tiny-c{
+  text-align: center;
+
+}
+
+.tiny-right{
+  float:right;
+
+}
+
+.g{
+  color:rgb(4, 180, 4);
+
+}
+.y{  
+  color:yellow;
+
+}
+
+.b{color:rgb(186, 133, 235);}
+
+.r{color: rgb(114, 35, 35);}
+
+.p{color:pink}
+
 .top-link ul{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 33px;
-  padding-right: 12px;
+  padding-right: 17px;
   position: relative;
   top: 17px;
 }
@@ -60,12 +104,17 @@ a{
   font-size: 1.4rem;
   color: #fff;
   margin: 6px;
+  padding: 5px 5px;
 }
 
 .top-link ul a:hover{
   border: 2px solid white;
+  padding: 5px 5px;
 }
-
+.hr{
+  color: red !important;
+  width: 100%;
+}
 .top-link .collapse-icon{ 
   display: none;
 
@@ -80,7 +129,8 @@ a{
   color: #f2f5f9;
 }
 .intro-1 .section-one h3:hover{
-  border: 0.91px dashed whitesmoke;
+  border: 3.91px double whitesmoke;
+  background-image: linear-gradient(180deg, #333, #252934);
 }
 
 .intro-1 .section-one p{
@@ -92,17 +142,23 @@ a{
 }
 
 .intro-1 .section-one p:hover{
-  border: 3px double wheat;
-}
+  border: 0.9px dashed wheat;
+} 
 
 .intro-1 section span{
   font-size: 1.72rem;
   font: x-large;
-  /* color: #2c3844; */
+  transition: all 11s ease;
   padding: 23px;
   position: relative;
-  top: 200px;
+  top: 20px;
   color: transparent;
+}
+
+.section-two{
+  position: relative;
+  top: 141px;
+  /* display: none; */
 }
 
 .intro-1 .section-two strong{
@@ -115,24 +171,133 @@ a{
   display: none;
 }
 
+/* Image  */
 
+.me{
+  display: flex;
+  /* justify-content: center; */
+}
+
+.me img{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  transform: rotate(1deg);
+  transition: all 9s ease;
+}
 
 /* About Section Styling */
 
+.about-me{
+  text-align: center;
+}
+
+.about {
+  background-color: ;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+  justify-items: center;
+}
+ 
+.about h4{
+  font-size: 5rem;
+}
+
+.section-3{
+  position: relative;
+  top: 3rem;
+  width: 70%;
+}
+
+.section-3 span{
+  color: #343333;  
+  font-size: 2rem;
+  word-wrap:wrap;
+}
+
+.my_links{
+  display: flex;
+  position: relative;
+  /* padding-top: 5px; */
+  padding-left: 5rem;
+  /* padding-bottom: 13px; */
+}
+
+.my_links ul{
+  list-style:none;
+  display: flex;
+  gap: 2rem;
+  cursor: pointer !important;
+}
+
+.my_links a{
+  cursor: pointer !important;
+  color: #888888 !important;
+  /* margin-top: 9px !important; */
+  padding:9px;
+  border-radius: 3px;
+}
+
+.my_links a:hover{
+  background-color: #1b242f;
+  color: #fff !important;
+}
+
+.form{
+  display: flex;
+  gap: 6px;
+  padding-left: 1rem !important;
+  padding-top: -23px;
+  margin-bottom: 23px;
+}
+
+.form input{
+  padding: 9px 12px;
+  font-size:26px;
+  border-color: brown;
+}
+
+.form input:focus{
+  background-color: #333;
+  color:#fff;
+  border: none;
+  outline: none ;
+
+}
+
+.btn{
+  padding: 13px 13px;
+  width: auto;
+  border: none;
+  background-color: #fff;
+  color: #15598f;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  border: 2px solid white !important;
+  background-color: #333;
+  color: #fff;
+}
+
+footer{
+  text-align:center;
+  font-size: 23px;
+  word-spacing: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 40px;
+}
 
 
 
+/*  skill toggle */
 
-
-
-
-
-
-
-
-
-
-
+.skill-toggle{
+  display: block;
+}
 
 
 
