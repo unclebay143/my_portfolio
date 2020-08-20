@@ -21,7 +21,6 @@
           <!-- Tiny classes are animations which shows around the webpage body when the MY SKILL BUTTON IS CLICKED -->
             <p class="tiny tiny-right tiny-1 b">Python</p>
             <p class="tiny tiny-c tiny-1 r">MySQL</p>
-
          <!-- Logo and Nav Link Start -->
         <div class="top">
         <h1>A.S.A</h1>
@@ -29,6 +28,7 @@
           <ul class="links">  
             <li><a href="#" class='skillbutton' onclick='showSkill();'>My Skills</a></li>
             <li><a href="#">Hire me</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
             <li><a href="#about">About</a></li>
           </ul>
         </nav>
@@ -76,14 +76,39 @@
                   <a style="color: rgb(117, 5, 27);">Pythonanywhere</a>. having interest in solving complex problems in simple ways, 
                 also having knowledge of <b style="color: darkolivegreen;">Python</b>, <a style="color: hotpink;">Django</a>
                  and <a style="color: mediumaquamarine;">MySQL</a>
-              </strong></span>
+              </strong>
+            </span>
           </section>
         </div>
       </header>
     </section>
     <!-- End of About Section -->
-
-    
+<!-- Contact Form -->
+    <div class=" contact-me-form" id="contact-me">
+      <section>
+        <form name="form" class="form" netlify>
+         <div class="contact-form subscribe-me">
+           <div class="contact-form-section-1">
+             <span class="contact-form-heading">Connect With Me</span>
+              <p>
+                <label><span></span> <input type="text" name="name" id="name" placeholder="Name" required></label>
+              </p>
+              <p>
+                <label><span></span> <input type="email" name="text" placeholder="Email" required/></label>
+              </p>
+            </div>
+            <div class="contact-form-section-2">
+              <p>
+                <textarea class="message" placeholder="Message..." required></textarea>
+              </p>
+            </div>
+            <p>
+              <button type="submit" class="contact-btn" onclick="success();">Send</button>
+            </p>
+         </div>
+        </form>
+      </section>
+    </div>
 
     <!-- Footer Start -->
     <div class="footer-container">
@@ -98,14 +123,14 @@
       </ul>
       <!-- Netlify Subscribe Email Section -->
       <section>
-        <form name="contact" class="form" netlify>
+        <form name="subscribe" class="form subscribe-form" netlify>
           <p>
-                <label><span>Name</span> <input type="text" name="name"  required></label>
+                <label><span>Name</span> <input type="text" name="name" required></label>
             </p>
             <p>
                 <label><span>Email</span> <input type="email" name="email"  required/></label>
             </p>
-                <button type="submit" class="btn">Subscribe</button>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
             </p>
         </form>
       </section>
