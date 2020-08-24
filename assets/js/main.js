@@ -14,5 +14,79 @@ function success(){
   visitor.value = ''
 }
   
-  
+function about(){
+  document.getElementById('Logo').style.color='#333';
+  document.getElementById('link1').style.color="dodgerblue";
+  document.getElementById('link2').style.color='dodgerblue';
+  document.getElementById('link3').style.color='dodgerblue';
+  document.getElementById('link4').style.color='dodgerblue';
+}
 
+function contactMe(){
+  // document.getElementById('Logo').style.color='#fff';
+  // document.getElementById('link1').style.color="pink";
+  // document.getElementById('link2').style.color='white';
+  // document.getElementById('link3').style.color='brown';
+  // document.getElementById('link4').style.color='green';
+}
+  
+// TOP BUTTON FUNCTION
+
+//Get the button
+var goTopBtn = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
+    goTopBtn.style.display = "block";
+    document.getElementById('Logo').style.color='brown';
+    document.getElementById('link1').style.color="pink";
+    document.getElementById('link2').style.color='#333';
+    document.getElementById('link3').style.color='brown';
+    document.getElementById('link4').style.color='green';
+    this.style.color = "white";
+    this.style.borderRadius = "23px";
+    this.style.border = 'none';
+  } else  {
+    goTopBtn.style.display = "none";
+    document.getElementById('Logo').style.color='white';
+    document.getElementById('link1').style.color="white";
+    document.getElementById('link2').style.color='white';
+    document.getElementById('link3').style.color='white';
+    document.getElementById('link4').style.color='white';
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+// trying to work on individual link on hover -- 
+
+// document.getElementById("link1").onmouseover = function()
+// {
+//     this.style.backgroundColor = "blue";
+//     this.style.color = "white";
+//     this.style.borderRadius = "23px";
+//     this.style.border = 'none';
+// }
+// document.getElementById("link2").onmouseover = function()
+// {
+//     this.style.backgroundColor = "blue";
+//     this.style.color = "white";
+//     this.style.borderRadius = "23px";
+//     this.style.border = 'none';
+// }
+// document.getElementById("link3").onmouseover = function()
+// {
+//     this.style.backgroundColor = "blue";
+//     this.style.color = "white";
+//     this.style.borderRadius = "23px";
+//     this.style.border = 'none';
+// }
