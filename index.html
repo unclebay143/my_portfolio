@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Author" content="Ayodele Samuel Adebayo">
   <meta name="description" content="junior frontend developer, react js html css javacript portfolio">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/m-q.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/m-q.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="/assets/img/me - Copy.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="assets/img/me - Copy.jpg" />
+  <script src="https://kit.fontawesome.com/c375a2cc0a.js" crossorigin="anonymous"></script>
   <title>Ayodele Samuel Adebayo --PortFolio</title>
 </head>
 <body>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <!-- Content Start  -->
   <div class="container">
     <!-- Header Start -->
@@ -23,13 +24,14 @@
             <p class="tiny tiny-c tiny-1 r">MySQL</p>
          <!-- Logo and Nav Link Start -->
         <div class="top">
-        <h1>A.S.A</h1>
+        <h1 id="Logo">A.S.A</h1>
         <nav class="top-link" id="top-nav">
           <ul class="links">  
-            <li><a href="#" class='skillbutton' onclick='showSkill();'>My Skills</a></li>
-            <li><a href="#">Hire me</a></li>
-            <li><a href="#contact-me">Contact me</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a id="link1" href="#" class='skillbutton' onclick='showSkill();'>My Skills</a></li>
+            <li><a id="link3" href="#my_projects" >Projects</a></li>
+            <li><a id="link2" href="#">Hire me</a></li>
+            <li><a id="link3" href="#contact-me" onclick="contactMe();">Contact me</a></li>
+            <li><a id="link4" href="#about" onclick="about();">About</a></li>
           </ul>
         </nav>
         <div class="link-toggle">
@@ -59,30 +61,154 @@
     </header>
     <!-- End of Header -->
    
-    <!-- About Section -->
+    
+<!-- Project Section Start -->
+
+    <div class="my_projects" id="my_projects">
+      <div class="project_cards">
+<!-- New Card Start -->
+        <div class="cards">
+          <div>
+            <img src="assets/img/jide_project.png" alt="">
+          </div>
+          <div class="project-description">
+            <h1>Auditor Website</h1>
+            <p>
+                This is an an official website for an auditing company, showing their company profile and previous works
+                 <a href="http://jideafolayanandco.herokuapp.com/">Click here to visit site</a>
+            </p>
+            <a
+                href="https://github.com/unclebay143/jideafolayanandco"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fa fa-github" aria-hidden="true"> View Code</i>
+              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
+            </a>
+          </div>
+        </div>
+<!-- Card End -->
+<!-- New Card Start -->
+        <div class="cards">
+          <div>
+            <img src="assets/img/to-do-list.png" alt="">
+          </div>
+          <div class="project-description">
+            <h1>To-do App</h1>
+            <p>
+              This is a simple to-do app I developed for educational purpose on
+              my own.
+              It allows the user to perform CRUD operations e.g adding and
+              removing tasks from the DOM. <br>
+              I developed this app using Vanilla JavaScript, HTML and CSS.
+            </p>
+            <a
+                href="https://github.com/unclebay143/vanilla-javascript-todo-list-with-animation"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fa fa-github" aria-hidden="true"> View Code</i>
+            </a>
+            <a 
+              href="https://todo-list-by-unclebay143.netlify.app/"
+              class="project-link"
+              target="_blank"
+              >
+              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
+            </a>
+          </div>
+        </div>
+<!-- Card End -->
+      </div>
+      <hr style="position: relative; top:150px;">
+      <div class="project_cards">
+<!-- New Card Start -->
+        <div class="cards">
+          <div>
+            <img src="assets/img/gf-cakes.png" alt="">
+          </div>
+          <div class="project-description">
+            <h1>Cake Showroom</h1>
+            <p>
+                This is a system for monitoring projects' progress of final year
+                students. It have three levels of users i.e Students, Supervisors
+                and the Project Coordinator. Each user have a specific role in the
+                system. Students have the lowest privilege. I developed this
+                system using React, Redux and Firebase
+            </p>
+            <a
+                href="https://github.com/unclebay143/gfcakes"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fa fa-github" aria-hidden="true"> View Code</i>
+
+            </a>
+            <a
+                href="http://unclebay143.pythonanywhere.com/"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
+            </a>
+          </div>
+        </div>
+<!-- Card End -->
+<!-- New Card Start -->
+        <div class="cards">
+          <div>
+            <img src="assets/img/bay-bot.png" alt="">
+          </div>
+          <div class="project-description">
+            <h1>BayBot</h1>
+            <p>
+                This is an AI like program written in Python which monitors the visitors that comes over for visit when you're not around,
+                BayBot displays a list of services it can render to the user to pick from, Either calling you, taking a message down for you and store it in a NOTEPAD and MYSQLdb, 
+                it has ability to remember your families and friends, and can perform and explain mathematics questions.
+              </p>
+            <a
+                href="https://github.com/unclebay143/BayBot2"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fab fa-github" aria-hidden="true"> View Code</i>
+              <!-- <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i> -->
+
+            </a>
+          </div>
+        </div>
+<!-- Card End -->
+      </div>
+<!-- End of Project Section -->
+
+<hr style="position: relative; top:2px;">
+
+<!-- About Section -->
     <section class="about-me">
       <header class="about" id="about">
         <h4>About Me</h4>
         <div class="me">
-          <img src="/assets/img/me.jpg" alt="">
+          <img src="assets/img/me.jpg" alt="">
           <section class="section-3">
             <span> 
               <strong>
                 <b style="color: orange;">Ayodele Samuel Adebayo</b>, is a Frontend Junior developer, 
-                using a super-power called <b style="color: rgb(82, 141, 141);">Javascript</b> along <a>React Js</a>,
+                using a super-power called <b style="color: rgb(82, 141, 141);">JavaScript</b> along <a>React JS</a>,
                 <a style="color: rgb(187, 105, 6);">Html</a>, <a style="color: rgb(10, 216, 130);">Css</a>, 
                 <a style="color: blueviolet;">Bootstrap</a>, knowledge on <a style="color:brown">Git Version Control</a>, 
                 <a style="color: coral;">Netlify</a>, <a style="color: cornflowerblue;">Heroku, 
                   <a style="color: rgb(117, 5, 27);">Pythonanywhere</a>. having interest in solving complex problems in simple ways, 
                 also having knowledge of <b style="color: darkolivegreen;">Python</b>, <a style="color: hotpink;">Django</a>
-                 and <a style="color: mediumaquamarine;">MySQL</a>
+                and <a style="color: mediumaquamarine;">MySQL .</a>
               </strong>
             </span>
           </section>
         </div>
       </header>
     </section>
-    <!-- End of About Section -->
+<!-- End of About Section -->
+
+
 <!-- Contact Form -->
     <div class=" contact-me-form" id="contact-me">
       <section>
@@ -115,10 +241,10 @@
       <!-- My Social Links Section -->
     <div class="my_links">
       <ul>
-        <li><a href="https://www.facebook.com/unclebay"><img src="/assets/img/facebook.svg" class="social-link">Facebook</a></li>
-        <li><a href="https://www.github.com/unclebay143"> <img src="/assets//img/github.svg" class="social-link"> Github</a></li>
-        <li><a href="https://www.linkedin.com/in/ayodele-samuel-ayodele-55902819a/"> <img src="/assets//img/linkedin.svg" class="social-link"> LinkedIn</a></li>
-        <li><a href="https://twitter.com/Ayodele29338919"><img src="/assets//img/twitter.svg" class="social-link">Twitter</a></li>
+        <li><a href="https://www.facebook.com/unclebay"><img src="assets/img/facebook.svg" class="social-link">Facebook</a></li>
+        <li><a href="https://www.github.com/unclebay143"> <img src="assets//img/github.svg" class="social-link"> Github</a></li>
+        <li><a href="https://www.linkedin.com/in/ayodele-samuel-ayodele-55902819a/"> <img src="assets//img/linkedin.svg" class="social-link"> LinkedIn</a></li>
+        <li><a href="https://twitter.com/Ayodele29338919"><img src="assets//img/twitter.svg" class="social-link">Twitter</a></li>
         <li><a href=""></a></li>
       </ul>
       <!-- Netlify Subscribe Email Section -->
@@ -143,10 +269,10 @@
       </footer>
     </div>
     <!-- Footer End -->
-  </div>
+    </div>
   <!-- Content End -->
 
   <!-- JavaScript  -->
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
