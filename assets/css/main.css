@@ -67,11 +67,26 @@ a{
   height: 30vh;
   cursor: pointer;
   position: fixed;
+  z-index: 99;
 }
 
 .top nav{
   position: fixed;
   right: 0;
+  z-index: 99;
+}
+
+#high{
+  background-color: rgba(148, 89, 121, 0.2);
+  /* opacity: 0.6; */
+  height: 90px;
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 
 .top h1:hover{

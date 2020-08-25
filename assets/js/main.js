@@ -46,9 +46,11 @@ function scrollFunction() {
     document.getElementById('link2').style.color='#333';
     document.getElementById('link3').style.color='brown';
     document.getElementById('link4').style.color='green';
+    document.getElementById('high').style.backgroundColor='rgba(148, 89, 121, 0.2)';
     this.style.color = "white";
     this.style.borderRadius = "23px";
     this.style.border = 'none';
+
   } else  {
     goTopBtn.style.display = "none";
     document.getElementById('Logo').style.color='white';
@@ -56,6 +58,7 @@ function scrollFunction() {
     document.getElementById('link2').style.color='white';
     document.getElementById('link3').style.color='white';
     document.getElementById('link4').style.color='white';
+    document.getElementById('high').style.backgroundColor='transparent';
   }
 }
 
