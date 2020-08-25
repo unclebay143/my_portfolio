@@ -41,12 +41,13 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
     goTopBtn.style.display = "block";
-    document.getElementById('Logo').style.color='brown';
-    document.getElementById('link1').style.color="pink";
-    document.getElementById('link2').style.color='#333';
-    document.getElementById('link3').style.color='brown';
-    document.getElementById('link4').style.color='green';
-    document.getElementById('high').style.backgroundColor='rgba(148, 89, 121, 0.2)';
+    document.getElementById('Logo').style.color='white';
+    document.getElementById('link1').style.color="white";
+    document.getElementById('link2').style.color='white';
+    document.getElementById('link3').style.color='white';
+    document.getElementById('link4').style.color='white';
+    document.getElementById('link5').style.color='pink';
+    document.getElementById('high').style.backgroundColor='#15598f';
     this.style.color = "white";
     this.style.borderRadius = "23px";
     this.style.border = 'none';
@@ -58,6 +59,7 @@ function scrollFunction() {
     document.getElementById('link2').style.color='white';
     document.getElementById('link3').style.color='white';
     document.getElementById('link4').style.color='white';
+    document.getElementById('link5').style.color='white';
     document.getElementById('high').style.backgroundColor='transparent';
   }
 }

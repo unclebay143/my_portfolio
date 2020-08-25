@@ -28,11 +28,12 @@
             <h1 id="Logo">A.S.A</h1>
             <nav class="top-link" id="top-nav">
               <ul class="links">  
+                <!-- <li><a id="link1" href="#stat" class='skillbutton' onclick='showSkill();'>My Skills</a></li> -->
                 <li><a id="link1" href="#" class='skillbutton' onclick='showSkill();'>My Skills</a></li>
-                <li><a id="link3" href="#my_projects" >Projects</a></li>
-                <li><a id="link2" href="#">Hire me</a></li>
-                <li><a id="link3" href="#contact-me" onclick="contactMe();">Contact me</a></li>
-                <li><a id="link4" href="#about" onclick="about();">About</a></li>
+                <li><a id="link2" href="#my_projects" >Projects</a></li>
+                <li><a id="link3" href="#contact-me">Hire me</a></li>
+                <li><a id="link4" href="#testimonial" onclick="contactMe();">Testimonial</a></li>
+                <li><a id="link5" href="#about" onclick="about();">About</a></li>
               </ul>
             </nav>
             <div class="link-toggle">
@@ -57,14 +58,56 @@
         </section>
         <p class="tiny tiny-right tiny-2 y">React js</p>
         <section class="section-two">
-          <strong>Fellow at -TIIDELab INITIATIVE </strong>
+          <strong>Currently Fellow at -TIIDELab INITIATIVE </strong>
           <hr class="hr">
         </section>
       </div>
     </header>
     <!-- End of Header -->
    
-    
+<!-- My Statistics Section -->
+    <div class="stat-container" id="stat">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>HTML & CSS</h1>
+          </div>
+          <div class="flip-card-back">
+            <h1>Online Tutor</h1> 
+            <p> With just HTML and CSS I was able to tutor over 20 students physically and remotely</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Best Programmer <br> of the year</h1>
+          </div>
+          <div class="flip-card-back">
+            <h1>School of ICT</h1> 
+            <p> I was awarded the best programmer for the session by my faculty </p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Python</h1>
+          </div>
+          <div class="flip-card-back">
+            <h1>Online Tutor</h1> 
+            <p> I was able to write my own python tutorial pdf material</p> 
+            <br>
+            <p> Feedback from my students and buyers shows how helpful it was for them</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of My Statistics Section -->
+
 <!-- Project Section Start -->
 
     <div class="my_projects" id="my_projects">
@@ -123,8 +166,10 @@
         </div>
 <!-- Card End -->
       </div>
+      <a href="#project-section-2"><button class="next-test-btn" style="width: 33px; height:35px; right: 30px; bottom: 60px;">&darr;</button></a>
+
       <hr style="position: relative; top:150px;">
-      <div class="project_cards">
+      <div class="project_cards" id="project-section-2">
 <!-- New Card Start -->
         <div class="cards">
           <div>
@@ -186,6 +231,48 @@
 
 <hr style="position: relative; top:2px;">
 
+<!-- Testimonial Section -->
+      <div class="testimonial" id="testimonial">
+        <div class="sections">
+          <div class="split right">
+            <div class="center testimony-card">
+              <img src="assets/img/adeyemi_buhari.jpg" alt="">
+              <h3>Adeyemi Buhari - <b style="font-size: small;">Backend Developer</b></h3>
+              <p><br>Ayodele Samuel Adebayo is very passionate about technology. He is a determined software developer with the zeal of assisting the community but frankly speaking If you don't get closer, you will not know the type of person he is.</p>
+              <p><br>A gem with countless qualities.</p></div>
+          </div>
+          <div class="split right">
+            <div class="center testimony-card">
+              <img src="assets/img/innocent-odeng.jpg" alt="">
+              <h3>Odang Innocent - <b style="font-size: small;">My Student</b></h3>
+              <p><br>You the best teacher a student could ever hope for! Thank you for all your hard work and dedication. Because of you I have come to love coding, you gave me strength I needed to take towards my dream of becoming a good programmer. I am so grateful you are my teacher, thank you for emboldening me 🙏🙏🙏</p></div>
+          </div>
+        </div>
+        <a href="#section2"><button class="next-test-btn">&darr;</button></a>
+        
+
+<!-- New Section -->
+        <div class="sections" id="section2">
+          <div class="split left">
+            <div class="center testimony-card">
+              <img src="assets/img/afolabi_john.jpg" alt="">
+              <h3>Afolabi John - <b style="font-size: small;">My Student</b></h3>
+              <p><br>Boss, I have a lot to write but before anything I want to say a very big thank you Sir, those tutorial are very impactful and helpful.</p></div>
+          </div>
+          <div class="split right">
+            <div class="split left">
+              <div class="center testimony-card">
+                <img src="assets/img/israel_alagbe.jpg" alt="">
+                <h3>Israel Alagbe - <b style="font-size: small;">Backend Developer</b></h3>
+                <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam quam, rem dolorum quod sed delectus cumque aut harum, quas dolor incidunt quidem voluptates optio suscipit, sunt distinctio quibusdam similique.</p></div>
+            </div>
+        </div>
+      </div>
+      <a href="#about"><button class="next-test-btn">&darr;</button></a>
+
+<!-- End Testimonial Section -->
+
+
 <!-- About Section -->
     <section class="about-me">
       <header class="about" id="about">
@@ -218,7 +305,7 @@
         <form name="form" class="form" netlify>
          <div class="contact-form subscribe-me">
            <div class="contact-form-section-1">
-             <span class="contact-form-heading">Connect With Me</span>
+             <span class="contact-form-heading">Hire Me</span>
               <p>
                 <label><span></span> <input type="text" name="name" id="name" placeholder="Name" required></label>
               </p>
