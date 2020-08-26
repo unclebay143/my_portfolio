@@ -44,9 +44,9 @@ function scrollFunction() {
     document.getElementById('Logo').style.color='white';
     document.getElementById('link1').style.color="white";
     document.getElementById('link2').style.color='white';
-    document.getElementById('link3').style.color='white';
+    document.getElementById('link3').style.color='pink';
     document.getElementById('link4').style.color='white';
-    document.getElementById('link5').style.color='pink';
+    document.getElementById('link5').style.color='white';
     document.getElementById('high').style.backgroundColor='#15598f';
     this.style.color = "white";
     this.style.borderRadius = "23px";
