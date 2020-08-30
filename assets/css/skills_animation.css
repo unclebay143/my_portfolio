@@ -1,0 +1,40 @@
+/* >>>>>>>>  Animation Styling <<<<<<<< */
+ 
+.tiny{
+  font-size:16px !important;
+  display: none;
+  transition: all 9s ease;
+  color: transparent !important;
+
+}
+.tiny-left{
+  float:left;
+
+}
+
+.tiny-c{
+  text-align: center;
+
+}
+
+.tiny-right{
+  float:right;
+
+}
+
+.g{
+  color:rgb(4, 180, 4);
+
+}
+.y{  
+  color:yellow;
+
+}
+
+.b{color:rgb(186, 133, 235);}
+
+.r{color: rgb(114, 35, 35);}
+
+.p{color:pink}
+
+/* >>>>>>>> End of Animation Styling <<<<<<<< */

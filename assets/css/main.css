@@ -12,8 +12,7 @@ body{
   background:#f2f5f9;
 }
 
-/* Top Button Styling Start*/
-
+/* >>>>>>>> Top Button Styling Start <<<<<<<< */
 #topBtn {
   display: none;
   position: fixed;
@@ -28,21 +27,24 @@ body{
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 0px 15px;
 }
 
 #topBtn:hover {
   opacity: 0.8;
 }
-/* End of Top Button Style */
+/* >>>>>>>> End of Top Button Style <<<<<<<< */
+ 
 
-/* All Link Styles */
+/* >>>>>>>> All Link Styles <<<<<<<< */
 a{
   text-decoration: none;
   color: #000000;
 }
 
-/* Header Styling */
+/* >>>>>>>> Header Styling <<<<<<<< */
+
+
 .top-header{
   background-color: #15598f;
   overflow: hidden;
@@ -54,21 +56,23 @@ a{
 .top{
   display: flex;
   justify-content: space-between;
-  height: 34vh;
 }
 
 .top h1{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 4rem;
   padding-left: 15px;
-  font-weight: 100;
-  align-items: center;
-  align-content: center;
-  align-content: center;
-  height: 30vh;
+  font-weight: 700;
   cursor: pointer;
   position: fixed;
   z-index: 99;
+}
+
+/* Make rotate on mouse hover */
+
+.top h1:hover{
+  /* transform: rotate(50deg); */
+  opacity: 0.9;
 }
 
 .top nav{
@@ -77,9 +81,36 @@ a{
   z-index: 99;
 }
 
+.top-link ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  padding-right: 17px;
+  position: relative;
+  top: 17px;
+}
+
+.top-link ul a{
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 6px;
+  padding: 5px 5px;
+  font-weight: 700;
+  width: 100%;
+  border: solid transparent;
+}
+
+.top-link ul a:hover{
+  border: 2px solid white;
+}
+
+.top{
+  /* color: #333; */
+}
+
+
 #high{
-  /* background-color: rgba(148, 89, 121, 0.2); */
-  /* opacity: 0.6; */
   height: 90px;
   width: 100vw;
   position: fixed;
@@ -88,69 +119,118 @@ a{
   right: 0;
   left: 0;
   top: 0;
+  background: #158;
+  color: #fff;
 }
 
-.top h1:hover{
-  transform: rotate(50deg);
+h1#logo{
+  color: #fff;
+}
+
+.hr{
+  color: white;
+  width: 100%;
+}
+.top-link .collapse-icon{ 
+  display: none;
+
+}
+.intro-1{
+  text-align: center;
+  margin-top: 200px;
+}
+
+.intro-1 .section-one h3{
+  font-size: 5rem;
+  font-weight: 900;
+  color: #f2f5f9;
+  color: wheat;
+  cursor: pointer;
+}
+.intro-1 .section-one h3:hover{
+    word-spacing: 2px;
+    transition: all 0.09s ease-in-out;
+  /* border: 3.91px double whitesmoke; */
+  /* background-image: linear-gradient(180deg, #333, #252934); */
+}
+
+.intro-1 .section-one p{
+  font-size: 2.72rem;
+  font-weight: -100;
+  font: x-large;
+  padding: 23px;
+}
+
+.intro-1 .section-one p:hover{
+  /* border: 0.9px dashed wheat; */
+} 
+
+.intro-1 section span{
+  font-size: 1.72rem;
+  font: x-large;
+  transition: all 11s ease;
+  padding: 23px;
+  position: relative;
+  top: 20px;
+  color: transparent;
+}
+
+.section-two{
+  position: relative;
+  top: 50px;
+}
+
+.intro-1 .section-two strong{
+  font-weight: 100;
+  font: large;
+}
+
+  /* >>>>>>>> Nav Bar Responsive Styles <<<<<<<< */
+ 
+.link-toggle{
+  display: none;
+}
+
+.stat-label{
+  display: block;
+  text-align: center;
+  margin-top: 123px;
+  margin-bottom: -123px;
+  font-size: 3rem;
+  color:#15598f;
 }
 
 #stat-link{
   color: white;
   font-size: 23px;
   margin-top: 12px;
-  /* background-color: black; */
   width: 100%;
   height: 100px;
+  overflow: hidden;
 }
+/* >>>>>>> My Skill Section */
 
 #myskill{
   font-size: 18px;
   position: relative;
-  top: px;
-  background-image:linear-gradient(234deg, green, yellow) ;
+  /* background-image:linear-gradient(234deg, green, yellow) ; */
+  /* color: white */
+  background-image:linear-gradient(35deg, rgb(5, 170, 5), rgb(128, 128, 6)) ;
+  color: wheat;
+  font-weight: 700;
 }
 
-/*  Animation Styling */
-.tiny{
-  font-size:16px !important;
-  display: none;
-  transition: all 9s ease;
-  color: transparent !important;
-
-}
-.tiny-left{
-  float:left;
-
+/* >>>>>>>>  skill toggle <<<<<<<< */
+.skill-toggle{
+  display: block;
 }
 
-.tiny-c{
-  text-align: center;
 
-}
 
-.tiny-right{
-  float:right;
+/* >>>>>>> End of My Skill Section */
 
-}
 
-.g{
-  color:rgb(4, 180, 4);
-
-}
-.y{  
-  color:yellow;
-
-}
-
-.b{color:rgb(186, 133, 235);}
-
-.r{color: rgb(114, 35, 35);}
-
-.p{color:pink}
-
-/* End of Animation Styling */
-
-/* START OF STATISTICS STYLING */
+/* >>>>>>>> START OF STATISTICS STYLING <<<<<<<< */
 
 .stat-container{
   display: flex;
@@ -212,89 +292,12 @@ a{
   padding-bottom: 5px;
 }
 
-/* END OF STATISTICS STYLING */
+/* >>>>>>>> END OF STATISTICS STYLING <<<<<<<< */
+ 
 
-.top-link ul{
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 33px;
-  padding-right: 17px;
-  position: relative;
-  top: 17px;
-}
 
-.top-link ul a{
-  font-size: 1.4rem;
-  color: #fff;
-  margin: 6px;
-  padding: 5px 5px;
-  font-weight: 800;
-}
 
-.top-link ul a:hover{
-  border: 2px solid white;
-  padding: 5px 5px;
-}
-.hr{
-  color: white;
-  width: 100%;
-}
-.top-link .collapse-icon{ 
-  display: none;
-
-}
-.intro-1{
-  text-align: center;
-}
-
-.intro-1 .section-one h3{
-  font-size: 5rem;
-  font-weight: 900;
-  color: #f2f5f9;
-}
-.intro-1 .section-one h3:hover{
-  border: 3.91px double whitesmoke;
-  background-image: linear-gradient(180deg, #333, #252934);
-}
-
-.intro-1 .section-one p{
-  font-size: 2.72rem;
-  font-weight: -100;
-  font: x-large;
-  padding: 23px;
-}
-
-.intro-1 .section-one p:hover{
-  border: 0.9px dashed wheat;
-} 
-
-.intro-1 section span{
-  font-size: 1.72rem;
-  font: x-large;
-  transition: all 11s ease;
-  padding: 23px;
-  position: relative;
-  top: 20px;
-  color: transparent;
-}
-
-.section-two{
-  position: relative;
-  top: 50px;
-}
-
-.intro-1 .section-two strong{
-  font-weight: 100;
-  font: large;
-}
-
-  /* Nav Bar Responsive Styles */
-.link-toggle{
-  display: none;
-}
-
-/* Image  */
+/* >>>>>>>> My Image  <<<<<<<< */
 
 .me{
   display: flex;
@@ -307,27 +310,40 @@ a{
   transform: rotate(1deg);
   transition: all 9s ease;
 }
-/* End of Image */
 
-/* Testimonial Styling */
+/* >>>>>>>> End of Image <<<<<<<< */
+ 
+
+/* >>>>>>>> Testimonial Styling <<<<<<<< */
 
 .sections{
   display: flex;
-  /* background-color: red; */
   justify-content: space-evenly;
   height: 100vh;
-  margin-top: 23px;
+  margin-top: 29px;
 }
 
+#testimonial-heading{
+  text-align: center;
+  color: #2980b9;
+  font-size: 29px;
+  position: relative;
+  bottom: 23px;
+  left: 20rem;
+  margin-bottom: 23px;
+}
 
 .testimony-card{
-  /* height: 100vh; */
   width: 300px;
   padding: 23px;
   align-items: center;
   margin-top: 50%;
+  height: 100vh;
 }
 
+.alagbe{
+  margin-top: 50px;
+}
 
 .testimony-card img{
   width: 150px;
@@ -356,14 +372,14 @@ a{
   opacity: 0.8;
 }
 
-/* End Testimonial Styling */
+/* >>>>>>>> End Testimonial Styling <<<<<<<< */
+ 
 
-/* About Section Styling */
+/* >>>>>>>> About Section Styling <<<<<<<< */
 
 .about-me{
   text-align: center;
   height: 100vh;
-  /* background-image: linear-gradient(100deg, wheat, red); */
 }
 
 .about {
@@ -392,19 +408,19 @@ a{
   font-size: 1.9rem;
   word-wrap:wrap;
 }
-/* End of About */
 
-/* My Project Styling Start */
+/* >>>>>>>> End of About <<<<<<<< */
+ 
 
+/* >>>>>>>> My Project Styling Start <<<<<<<< */
 
 .project_cards{
   display: flex;
   justify-content: center;
   gap: 40px;
-  /* border-bottom: 4px solid red; */
   padding: 17px;
   height: 100vh;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 .project-description{
@@ -434,10 +450,11 @@ a{
   border: 4px solid blue;
 }
 .cards img{
-  width: 600px;
-  height: 330.75px;
+  width: 500px;
+  height: 250.75px;
   border-radius: 4px;
   cursor: pointer;
+  filter: brightness(70%);
   -webkit-filter: brightness(70%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -449,14 +466,19 @@ a{
 }
 
 .cards img:hover{
+  filter: brightness(70%);
   -webkit-filter: brightness(100%);
 }
-/* My Project Styling End */
+
+/* >>>>>>>> Project Styling End <<<<<<<< */
+
+/* >>>>>>>> Social Links Stylings <<<<<<<< */
 
 .my_links{
   display: flex;
   position: relative;
   padding-left: 5rem;
+  padding-top: 50px;
 }
 
 .my_links ul{
@@ -476,8 +498,6 @@ a{
   color: #011731 !important;
 }
 
-/* Social Link Styles */
-
 .social-link{
   padding-top:20px;
   width: 40px;
@@ -488,8 +508,12 @@ a{
   width: 44px;
   height:44px;
 }
-/* Social Link Styles End */
 
+/* >>>>>>>> Social Link Styles End <<<<<<<< */
+ 
+
+/* >>>>>>>> Subscribe-form Styles  <<<<<<<< */
+ 
 .subscribe-form{
   display: flex;
   gap: 6px;
@@ -497,6 +521,18 @@ a{
   padding-top: -23px;
   margin-bottom: 23px;
 }
+
+/* Contact me and News Letter Headings */
+.my_links h4{
+  position: relative;
+  bottom: 5rem;
+  left: 18rem;
+  color: #158;
+  font-size: 1.4em;
+  white-space: nowrap;
+  font-weight: 100;
+}
+
 .subscribe-form span{
   font-size: 21px;
   padding: 12px;
@@ -532,45 +568,32 @@ a{
   color: #fff;
 }
 
-/* Footer Styles */
-/* .footer-container{
-} */
-/* End of Footer Styles */
-footer{
-  text-align:center;
-  font-size: 27px;
-  word-spacing: 9px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-  padding-top: 40px;
-  height: 19vh;
+/* >>>>>>>>  Subscribe Styles End <<<<<<<< */
+
+/* More contact styling, phone, email and address */
+
+.more-contact{
+  color:rgb(19, 29, 36);
+  position: relative;
+  left: 13.3%;
+  font-size: 19px;
+  margin: 43px;
 }
 
 
 
-/*  skill toggle */
-
-.skill-toggle{
-  display: block;
-}
-
-
-
-/* Subscribe Section */
-.contact-form-heading{
+/* >>>>>>>> Hire me Section <<<<<<<< */
+ 
+.hire-form-heading{
   font-size: 3rem;
   color: #15598f;
-  /* color: rgb(63, 57, 150); */
   font-weight: 900;
   position: relative;
   bottom: 40px;
   left: 67%;
 }
 
-.contact-form{
-  /* box-shadow: 2px 2px 12px rgba(0,0,0,0.2); */
-  /* background-color: rgb(147, 142, 221); */
-  /* background-image: linear-gradient(120deg, pink, rgb(131, 89, 963)); */
+.hire-form{
   padding: 29px;
   display: flex;
   flex-direction: row;
@@ -579,8 +602,8 @@ footer{
   justify-content: center;
 }
 
-.contact-form-section-1 input[type=text],
-.contact-form-section-1 input[type=email]{
+.hire-form-section-1 input[type=text],
+.hire-form-section-1 input[type=email]{
   font-family: cursive;
   height: 98px;
   border: 1px solid #ccc;
@@ -589,22 +612,18 @@ footer{
   padding: 7px;
   margin-right: 23px;
   box-sizing: border-box;
-  /* background-color: rgb(73, 66, 66); */
-  /* color: #fff; */
   color: rgb(73, 66, 66);
   border: 4px solid #dddddd;
 
 }
 
-.contact-form-section-1 input[type=text]:focus,
-.contact-form-section-1 input[type=email]:focus,
-.contact-form-section-2 .message:focus{
+.hire-form-section-1 input[type=text]:focus,
+.hire-form-section-1 input[type=email]:focus,
+.hire-form-section-2 .message:focus{
   font-family: cursive;
-  /* background: #fff; */
-  /* color: #000; */
 }
 
-.contact-form-section-2 .message{
+.hire-form-section-2 .message{
   font-family: cursive;
   width: 400px;
   max-width: 450px;
@@ -612,26 +631,24 @@ footer{
   max-height: 200px;
   border: none;
   padding: 12px 12px 0px 10px;
-  margin-top: 65px !important;
+  margin-top: 82px !important;
   font-size: 19px;
   text-transform: capitalize;
-  /* background-color: rgb(73, 66, 66); */
   color: rgb(73, 66, 66);
   border: 4px solid #dddddd;
 
 }
 
-.contact-btn{
+.hire-btn{
   flex-wrap: nowrap;
   padding: 20px 23px;
   font-size: 20px;
   position: relative;
   top: 180px;
-  right: 420.9px;
+  right: 400.9px;
   flex-direction: column;
   border: none;
   border-radius: 4px;
-  /* background-color: rgb(124, 115, 241); */
   background-color: #15598f;
   color: white;
   cursor: pointer;
@@ -640,11 +657,28 @@ footer{
   font-family: monospace;
 }
 
-.contact-btn:hover{ 
+.hire-btn:hover{ 
   color: white;
   opacity: 0.8;
-  /* background-image: linear-gradient(120deg, rgb(131, 89, 963), pink); */
 }
+
+/* >>>>>>>>  End of Hire me Section <<<<<<<< */
+
+
+/* >>>>>>>> Footer Styles <<<<<<<< */
+
+ 
+footer{
+  text-align:center;
+  font-size: 21px;
+  font-family: cursive;
+  font-weight: 100;
+  padding-top: 40px;
+  height: 19vh;
+  color: #157;
+}
+
+/* >>>>>>>> End of Footer Styles <<<<<<<< */
 
 
 
