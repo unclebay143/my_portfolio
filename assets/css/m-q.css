@@ -83,6 +83,14 @@
     align-items: center;
     align-content: center;
     text-align: center;
+    display: block;
+    background: #158;
+    line-height: 5em;
+    width: 1000%;
+  }
+
+  .top-link ul:{
+    display: none
   }
 
   .top-link ul > li a{
