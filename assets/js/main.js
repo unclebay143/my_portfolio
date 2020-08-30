@@ -3,9 +3,7 @@ function classToggle() {
   
   navs.forEach(nav => nav.classList.toggle('Show'));
 }
-
-document.querySelector('.link-toggle')
-  .addEventListener('click', classToggle);
+document.querySelector('.link-toggle').addEventListener('click', classToggle);
 
 
 function success(){
@@ -15,7 +13,7 @@ function success(){
 }
   
 function about(){
-  document.getElementById('Logo').style.color='#333';
+  document.getElementById('Logo').style.color='#';
   document.getElementById('link1').style.color="dodgerblue";
   document.getElementById('link2').style.color='dodgerblue';
   document.getElementById('link3').style.color='dodgerblue';
@@ -36,10 +34,11 @@ function contactMe(){
 var goTopBtn = document.getElementById("topBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
+// 620 for previous menu
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     goTopBtn.style.display = "block";
     document.getElementById('Logo').style.color='white';
     document.getElementById('link1').style.color="white";
@@ -60,7 +59,7 @@ function scrollFunction() {
     document.getElementById('link3').style.color='white';
     document.getElementById('link4').style.color='white';
     document.getElementById('link5').style.color='white';
-    document.getElementById('high').style.backgroundColor='transparent';
+    document.getElementById('high').style.backgroundColor='#15866';
   }
 }
 

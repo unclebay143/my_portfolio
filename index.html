@@ -7,48 +7,45 @@
   <meta name="Author" content="Ayodele Samuel Adebayo">
   <meta name="description" content="junior frontend developer, react js html css javacript portfolio">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/hamburger.css">
   <link rel="stylesheet" href="assets/css/m-q.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/loader.css">
+  <link rel="stylesheet" href="assets/css/skills_animation.css">
   <link rel="shortcut icon" href="assets/img/me - Copy.jpg" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/c375a2cc0a.js" crossorigin="anonymous"></script>
   <title>Ayodele Samuel Adebayo --PortFolio</title>
 </head>
 <body>
+  <!-- Loader Section -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
   <!-- Goto Top Button -->
-  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Scroll To Top</button>
   
   <!-- Content Start  -->
   <div class="container">
 
     <!-- Header Start -->
     <header class="top-header">
-      <!-- Tiny classes are animations which shows around the webpage body when the MY SKILL BUTTON IS CLICKED -->
-      <p class="tiny tiny-right tiny-1 b">Python</p>
-      <p class="tiny tiny-c tiny-1 r">MySQL</p>
-      <!-- End of Tiny classes -->
-      
-      <!-- Logo and Nav Link Start -->
-      <div class="top">
-        <div id="high">
-          <h1 id="Logo">A.S.A</h1>
-          <nav class="top-link" id="top-nav">
-            <ul class="links">  
-              <!-- <li><a id="link1" href="#stat" class='skillbutton' onclick='showSkill();'>My Skills</a></li> -->
-              <li><a id="link1" href="#" class='skillbutton' onclick='showSkill();'>My Skills</a></li>
-              <li><a id="link2" href="#my_projects" >Projects</a></li>
-              <li><a id="link3" href="#contact-me">Hire me</a></li>
-              <li><a id="link4" href="#testimonial" onclick="contactMe();">Testimonial</a></li>
-              <li><a id="link5" href="#about" onclick="about();">About</a></li>
-            </ul>
-          </nav>
-          <div class="link-toggle">
-            <i class="fas fa-ba">A</i>
-          </div>
-        </div>
-      </div>
-      <!-- End of Logo and Nav Link Section -->
-
       <!-- Main Header body -->
+      <div class="menu-handler">
+        <label class="hamburger-container">
+          <input type='checkbox'>
+          <span class='menu'> <span class='hamburger'></span> </span>
+          <ul>
+            <li> <a href='/index.html'>My Skills</a> </li>
+            <li> <a href='/main-body.html#my_projects'>Projects</a> </li>
+            <li> <a href='/main-body.html#hire-me'>Hire Me</a> </li>
+            <li> <a href='/main-body.html#testimonial'>Testimonial</a> </li>
+            <li> <a href='/main-body.html#about'>About</a> </li>
+          </ul>
+          </label>
+      </div>
+
       <div class="intro-1">
 
         <section class="section-one">
@@ -67,7 +64,7 @@
         <section class="section-two">
           <strong>Currently Fellow at -TIIDELab INITIATIVE </strong>
           <hr class="hr">
-          <a href="#stat" class="stat-scroll-down-">
+          <a href="/main-body.htmla#stat" class="stat-scroll-down-">
             <i class="fa fa-chevron-down" id="stat-link" aria-hidden="true"></i>
           </a>
         </section>
@@ -75,432 +72,8 @@
       </div>
     </header>
     <!-- End of Header -->
-   
-    <!-- My Statistics Section -->
-    <div class="stat-container" id="stat">
-
-      <!-- Card 1  -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h1>HTML & CSS</h1>
-          </div>
-          <div class="flip-card-back">
-            <h1>Online Tutor</h1> 
-            <p> With just HTML and CSS I was able to tutor over 20 students physically and remotely</p> 
-          </div>
-        </div>
-      </div>
-      <!-- End of card 1 -->
-
-      <!-- Card 2  -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h1>Best Programmer <br> of the year</h1>
-          </div>
-          <div class="flip-card-back">
-            <h1>School of ICT</h1> 
-            <p> I was awarded the best programmer for the session by my faculty </p> 
-          </div>
-        </div>
-      </div>
-      <!-- End of card 2 -->
-
-      <!-- Card 3 -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h1>Python</h1>
-          </div>
-          <div class="flip-card-back">
-            <h1>Online Tutor</h1> 
-            <p> I was able to write my own python tutorial pdf material</p> 
-            <br>
-            <p> Feedback from my students and buyers shows how helpful it was for them</p> 
-          </div>
-        </div>
-      </div>
-      <!-- End of Card 3 -->
-    </div>
-    <!-- End of My Statistics Section -->
-
-    <!-- Next Scroll Button -->
-    <a href="#my_projects">
-      <i class="fa fa-chevron-down" 
-        style="
-          /* box-shadow: 1px 1px 2px 0 #15598f; */
-          background-color: #15598f; 
-          color: white; 
-          position: relative; 
-          padding: 12px; 
-          left: 50%; 
-          border-radius: 5px;
-          bottom: 60px;"
-        >
-      </i>
-    </a>
-    <!-- End of Next Scroll Button -->
-    
-    <!-- Project Section Start -->
-    <div class="my_projects" id="my_projects">
-      <div class="project_cards">
-        <!-- New Card Start -->
-        <div class="cards">
-          <div>
-            <img src="assets/img/jide_project.png" alt="">
-          </div>
-          <div class="project-description">
-
-            <h1>Auditor Website</h1>
-
-            <p>
-                This is an an official website for an auditing company, showing their company profile and previous works
-                 <a href="http://jideafolayanandco.herokuapp.com/">Click here to visit site</a>
-            </p>
-
-            <!-- Project Links -->
-            <a
-                href="https://github.com/unclebay143/jideafolayanandco"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fa fa-github" aria-hidden="true"> View Code</i>
-            </a>
-            <a
-                href="https://jideafolayanandco.herokuapp.com"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
-            </a>
-
-          </div>
-        </div>
-        <!-- Card End -->
-
-        <!-- New Card Start -->
-        <div class="cards">
-
-          <div>
-            <img src="assets/img/to-do-list.png" alt="">
-          </div>
-          
-          <div class="project-description">
-          
-            <h1>To-do App</h1>
-          
-            <p>
-              This is a simple to-do app I developed for educational purpose on
-              my own.
-              It allows the user to perform CRUD operations e.g adding and
-              removing tasks from the DOM. <br>
-              I developed this app using Vanilla JavaScript, HTML and CSS.
-            </p>
-            <!-- Porject Links  -->
-            <a
-                href="https://github.com/unclebay143/vanilla-javascript-todo-list-with-animation"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fa fa-github" aria-hidden="true"> View Code</i>
-            </a>
-          
-            <a 
-              href="https://todo-list-by-unclebay143.netlify.app/"
-              class="project-link"
-              target="_blank"
-              >
-              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
-            </a>
-
-          </div>
-        </div>
-<!-- Card End -->
-
-      </div>
-      
-      <!-- Next Scroll Button -->
-      <a href="#project-section-2">
-        <i class="fa fa-chevron-down" 
-        style="
-          box-shadow: 1px 1px 2px 0 #15598f;
-          background-color: #15598f; 
-          color: white; 
-          position: relative; 
-          padding: 12px; 
-          left: 47%; 
-          border-radius: 5px;
-          bottom: 60px;"
-        >
-        </i>
-      </a>
-      <!-- End of Next Scroll Button -->
-
-      <hr style="position: relative; top:150px;">
-      <div class="project_cards" id="project-section-2">
-<!-- New Card Start -->
-        <div class="cards">
-          <div>
-            <img src="assets/img/gf-cakes.png" alt="">
-          </div>
-          <div class="project-description">
-            <h1>Cake Showroom</h1>
-            <p>
-                This is a system for monitoring projects' progress of final year
-                students. It have three levels of users i.e Students, Supervisors
-                and the Project Coordinator. Each user have a specific role in the
-                system. Students have the lowest privilege. I developed this
-                system using React, Redux and Firebase
-            </p>
-            <a
-                href="https://github.com/unclebay143/gfcakes"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fa fa-github" aria-hidden="true"> View Code</i>
-
-            </a>
-            <a
-                href="http://unclebay143.pythonanywhere.com/"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
-            </a>
-          </div>
-        </div>
-<!-- Card End -->
-<!-- New Card Start -->
-        <div class="cards">
-          <div>
-            <img src="assets/img/bay-bot.png" alt="">
-          </div>
-          <div class="project-description">
-            <h1>BayBot</h1>
-            <p>
-                This is an AI like program written in Python which monitors the visitors that comes over for visit when you're not around,
-                BayBot displays a list of services it can render to the user to pick from, Either calling you, taking a message down for you and store it in a NOTEPAD and MYSQLdb, 
-                it has ability to remember your families and friends, and can perform and explain mathematics questions.
-              </p>
-            <a
-                href="https://github.com/unclebay143/BayBot2"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fab fa-github" aria-hidden="true"> View Code</i>
-              <!-- <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i> -->
-
-            </a>
-          </div>
-          <!-- Next Scroll Button -->
-          <a href="#testimonial">
-            <i class="fa fa-chevron-down" 
-            style="
-              box-shadow: 1px 1px 2px 0 #15598f;
-              background-color: #15598f; 
-              color: white; 
-              position: relative; 
-              padding: 12px; 
-              right: 11%; 
-              border-radius: 5px;
-              bottom: 60px;"
-            >
-            </i>
-          </a>
-          <!-- End of Next Scroll Button -->
-        </div>
-<!-- Card End -->
-      </div>
-    <!-- End of Project Section -->
-
-    <hr style="position: relative; top:2px;">
-
-    <!-- Testimonial Section -->
-      <div class="testimonial" id="testimonial">
-
-        <!-- Testimonial Row 1 -->
-        <div class="sections">
-
-          <!-- Adeyemi Buhari Testimony -->
-          <div class="split right">
-            <div class="center testimony-card">
-              <img src="assets/img/adeyemi_buhari.jpg" alt="">
-              <h3>Adeyemi Buhari<b style="font-size: small; white-space: nowrap;"> - Backend Developer</b></h3>
-              <p><br>Ayodele Samuel Adebayo is very passionate about technology. 
-                He is a determined software developer with the zeal of assisting the 
-                community but frankly speaking If you don't get closer, 
-                you will not know the type of person he is.</p>
-              <p><br>A gem with countless qualities.</p>
-            </div>
-          </div>
-
-          <!-- Isreal Alagbe Testimony -->
-          <div class="split right">
-            <div class="center testimony-card">
-              <img src="assets/img/israel_alagbe.jpg" alt="">
-              <h3>Israel Alagbe - <b style="font-size: small;">FullStack Developer</b></h3>
-              <p><br>"Ayodele is a creative software developer, and a friend. 
-                      He is always willing to learn and improve his skills. 
-                      He'll be a great asset to any company he works with."
-              </p>
-            </div>
-          </div>
-
-        </div>
-        <!-- End of Testimonial Row 1 -->
-
-        <!-- Scroll Button 2-->
-        <a href="#section2"><button class="next-test-btn">&darr;</button></a>
-
-        <!-- Testimonial Row 2 -->
-        <div class="sections" id="section2">
-
-          <!-- Afolabi John Testimony -->
-          <div class="split left">
-            <div class="center testimony-card">
-              <img src="assets/img/afolabi_john.jpg" alt="">
-              <h3>Afolabi John - <b style="font-size: small;">My Student</b></h3>
-              <p><br>"Boss, I have a lot to write but before anything I want to say a very big thank you Sir,
-                 those tutorials are very impactful and helpful."</p>
-            </div>
-          </div>
-
-          <!-- Odeh Innocent Testimony -->
-          <div class="split right">
-            <div class="center testimony-card">
-              <img src="assets/img/innocent-odeng.jpg" alt="">
-              <h3> Odeh Innocent - <b style="font-size: small;">My Student</b></h3>
-              <p><br>You the best teacher a student could ever hope for! Thank you for all your hard work and dedication. Because of you I have come to love coding, you gave me strength I needed to take towards my dream of becoming a good programmer. I am so grateful you are my teacher, thank you for emboldening me 🙏🙏🙏</p></div>
-          </div>
-        </div>
-
-        <!-- Scroll Button 3-->
-        <a href="#section3"><button class="next-test-btn">&darr;</button></a>
-
-        <!-- Testimonial Row 3 -->
-        <div class="sections" id="section3">
-
-          <!-- Afolabi John Testimony -->
-          <div class="split left">
-            <div class="center testimony-card">
-              <img src="assets/img/mide_ajao.jpg" alt="">
-              <h3>Mide Ajao - <b style="font-size: small;">A Friend</b></h3>
-              <p><br>Bay is a good coder I know that is very passionate, hardworking and very inspiring.  
-                 Sometimes I wonder where he got all the energy from because I haven't see a young lad striving 
-                so hard to top the game like him, just like I said, he's inspiring and I'm so glad to have known 
-                someone like him.
-              </p>
-            </div>
-          </div>
-
-          <!-- Isreal Alagbe Testimony -->
-          <div class="split right">
-            <div class="center testimony-card">
-              <img src="assets/img/anonymous.jpg" alt="">
-              <h3>Anonymous - <b style="font-size: small;">Student From Facebook</b></h3>
-              <p><br>He was the one that taught me how to code for the very first time 
-                and he helped me to understand how to code HTML, CSS and Python.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-<!-- End Testimonial Section -->
-
-<a href="#about"><button class="next-test-btn">&darr;</button></a>
-
-
-<!-- About Section -->
-    <section class="about-me">
-      <header class="about" id="about">
-        <h4>About Me</h4>
-        <div class="me">
-          <img src="assets/img/me.jpg" alt="">
-          <section class="section-3">
-            <span> 
-              <strong>
-                <b style="color: orange;">Ayodele Samuel Adebayo</b>, is a Frontend Junior developer, 
-                using a super-power called <b style="color: rgb(82, 141, 141);">JavaScript</b> along <a>React JS</a>,
-                <a style="color: rgb(187, 105, 6);">Html</a>, <a style="color: rgb(10, 216, 130);">Css</a>, 
-                <a style="color: blueviolet;">Bootstrap</a>, knowledge on <a style="color:brown">Git Version Control</a>, 
-                <a style="color: coral;">Netlify</a>, <a style="color: cornflowerblue;">Heroku, 
-                  <a style="color: rgb(117, 5, 27);">Pythonanywhere</a>. having interest in solving complex problems in simple ways, 
-                also having knowledge of <b style="color: darkolivegreen;">Python</b>, <a style="color: hotpink;">Django</a>
-                and <a style="color: mediumaquamarine;">MySQL .</a>
-              </strong>
-            </span>
-          </section>
-        </div>
-      </header>
-    </section>
-<!-- End of About Section -->
-
-
-<!-- Contact Form -->
-    <div class=" contact-me-form" id="contact-me">
-      <section>
-        <form name="form" class="form" netlify>
-         <div class="contact-form subscribe-me">
-           <div class="contact-form-section-1">
-             <span class="contact-form-heading">Hire Me</span>
-              <p>
-                <label><span></span> <input type="text" name="name" id="name" placeholder="Name" required></label>
-              </p>
-              <p>
-                <label><span></span> <input type="email" name="text" placeholder="Email" required/></label>
-              </p>
-            </div>
-            <div class="contact-form-section-2">
-              <p>
-                <textarea class="message" name="message" placeholder="Message..." required></textarea>
-              </p>
-            </div>
-            <p>
-              <button type="submit" class="contact-btn" onclick="success();">Send</button>
-            </p>
-         </div>
-        </form>
-      </section>
-    </div>
-
-    <!-- Footer Start -->
-    <div class="footer-container">
-      <!-- My Social Links Section -->
-    <div class="my_links">
-      <ul>
-        <li><a href="https://www.facebook.com/unclebay"><img src="assets/img/facebook.svg" class="social-link">Facebook</a></li>
-        <li><a href="https://www.github.com/unclebay143"> <img src="assets//img/github.svg" class="social-link"> Github</a></li>
-        <li><a href="https://www.linkedin.com/in/ayodele-samuel-ayodele-55902819a/"> <img src="assets//img/linkedin.svg" class="social-link"> LinkedIn</a></li>
-        <li><a href="https://twitter.com/Ayodele29338919"><img src="assets//img/twitter.svg" class="social-link">Twitter</a></li>
-        <li><a href=""></a></li>
-      </ul>
-      <!-- Netlify Subscribe Email Section -->
-      <section>
-        <form name="subscribe" class="form subscribe-form" netlify>
-          <p>
-                <label><span>Name</span> <input type="text" name="name" required></label>
-            </p>
-            <p>
-                <label><span>Email</span> <input type="email" name="email"  required/></label>
-            </p>
-                <button type="submit" class="subscribe-btn">Subscribe</button>
-            </p>
-        </form>
-      </section>
-      <!-- Netlify Form End -->
-    </div>
-    <!-- Link Section End -->
-
-      <footer>
-        <h5>Walk-In Tech &copy;2020</h5>
-      </footer>
-    </div>
-    <!-- Footer End -->
-    </div>
-  <!-- Content End -->
-
-  <!-- JavaScript  -->
-  <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/loader.js"></script>
+</div>
 </body>
 </html>
