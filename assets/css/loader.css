@@ -1,3 +1,5 @@
+/* ==== Loader Parent Container ====== */
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -6,6 +8,9 @@
   height: 100%;
   z-index: 1000;
 }
+
+/* Styling the loader id */
+
 #loader {
   display: block;
   position: relative;
@@ -20,6 +25,8 @@
   -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
+
+/* Creating a before fake content*/
 
 #loader:before {
   content: "";
@@ -36,6 +43,8 @@
     animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
+/* Creating a before fake content*/
+
 #loader:after {
   content: "";
   position: absolute;
@@ -50,6 +59,8 @@
   -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
+
+/* Animation Styling */
 
 @-webkit-keyframes spin {
   0%   {
