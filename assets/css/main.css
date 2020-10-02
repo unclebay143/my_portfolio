@@ -17,6 +17,9 @@ button{
   outline:none;
   border: none;
 }
+hr{
+  display: none;
+}
 /* >>>>>>>> Top Button Styling Start <<<<<<<< */
 #topBtn {
   display: none;
