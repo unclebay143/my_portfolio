@@ -1,3 +1,14 @@
+function hidelinks(){
+  if (document.getElementById("links").style.display == "block")
+  {
+    document.getElementById("links").style.display = "none";
+  }
+  else
+  {
+    document.getElementById("links").style.display = "block"
+  }
+}
+
 function classToggle() {
   const navs = document.querySelectorAll('.top-link')
   
