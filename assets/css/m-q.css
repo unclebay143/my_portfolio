@@ -5,13 +5,10 @@
     padding: 0;
   }
 
-  .intro-1{
-    margin-top: 25px;
-  }
-
   .intro-1 section span{
     display: none;
   }
+
 
   .intro-1 .section-two strong{
     position: relative;
@@ -30,6 +27,7 @@
   .testimony-card{
     align-items: center;
     margin-top: 100%;
+    
   }
 
   .sections,
@@ -437,12 +435,14 @@
 
 
 
-/* Use this to target other devices*/
-@media only screen and (max-width: px){
+/* android */
+@media only screen and (max-width: 600px){
   body{
-    background: red !important;
   }
 
+  .info-1{
+    
+  }
   .project_cards{
     margin-top: 30px;
   }
