@@ -43,6 +43,7 @@ function contactMe(){
 
 //Get the button
 var goTopBtn = document.getElementById("topBtn");
+// var goTopBtn = document.getElementById("topBtn2");
 
 // When the user scrolls down 20px from the top of the document, show the button
 // 620 for previous menu

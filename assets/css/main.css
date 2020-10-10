@@ -20,6 +20,17 @@ button{
 hr{
   display: none;
 }
+.resume_pop{
+  display: none;
+}
+.resume_pop_up{
+  position: fixed;
+  z-index: 99;
+  height: 100vw;
+  width: 1024px;
+  display: block;
+  margin: 2rem 30rem 10rem 12rem;
+}
 /* >>>>>>>> Top Button Styling Start <<<<<<<< */
 #topBtn {
   display: none;
@@ -27,6 +38,13 @@ hr{
   bottom: 20px;
   right: 30px;
   z-index: 99;
+}
+#button_container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#topBtn button{
   font-size: 18px;
   border: none;
   outline: none;
@@ -36,6 +54,11 @@ hr{
   cursor: pointer;
   padding: 15px;
   border-radius: 0px 15px;
+}
+
+button#resume_btn{
+  border-radius: 15px 0px;
+  z-index: 100;
 }
 
 #topBtn:hover {
