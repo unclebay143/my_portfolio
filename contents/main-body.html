@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Author" content="Ayodele Samuel Adebayo">
   <meta name="description" content="junior frontend developer, react js html css javacript portfolio">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/hamburger.css">
   <link rel="stylesheet" href="../assets/css/m-q.css">
@@ -27,12 +28,15 @@
   </div>
   <!-- Goto Top Button -->
   <div class="resume_pop">
-    <embed src="../assets/resume/Ayodele Samuel Adebayo.pdf"  width="100%" height="500px">
+    <!-- <a href="/assets/resume/Ayodele Samuel Adebayo.pdf"></a> -->
+    <!-- <embed src="../assets/resume/Ayodele Samuel Adebayo.pdf"  width="100%" height="500px"> -->
     <!-- </embed> -->
   </div>
   <div id="topBtn">
     <div id="button_container">
-      <button onclick="topFunction()" id="resume_btn" title="Go to top">My Resume</button>
+      <a href="/assets/resume/Ayodele Samuel Adebayo.pdf">  
+        <button id="resume_btn">My Resume</button>
+      </a>
       <button onclick="topFunction()" id="top_btn" title="Go to top">Scroll To Top</button>
     </div>
   </div>
@@ -79,7 +83,7 @@
         </div>
         <div class="flip-card-back">
           <h1>Online Tutor</h1> 
-          <p> With just HTML and CSS I was able to tutor over 20 students physically and remotely</p> 
+          <p> WithHTML and CSS I was able to tutor over 20 students physically and remotely</p> 
         </div>
       </div>
     </div>
@@ -89,7 +93,7 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <h1 id="card-2-h1">Best Programmer <br> of the year</h1>
+          <h1 id="card-2-h1">Programmer <br> of the year</h1>
         </div>
         <div class="flip-card-back">
           <h1>School of ICT</h1> 
@@ -153,20 +157,23 @@
               This is an an official website for an auditing company, showing their company profile and previous works, this as build using HTML, CSS and Django.
           </p>
           <!-- Project Links -->
-          <a
-              href="https://github.com/unclebay143/jideafolayanandco"
-              class="project-link"
-              target="_blank"
-              >
-            <i class="fa fa-github" aria-hidden="true"> View Code</i>
-          </a>
-          <a
-              href="https://jideafolayanandco.herokuapp.com"
-              class="project-link"
-              target="_blank"
-              >
-            <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
-          </a>
+          <div class="jide-links">
+
+            <a
+                href="https://github.com/unclebay143/jideafolayanandco"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fa fa-github" aria-hidden="true"> View Code</i>
+            </a>
+            <a
+                href="https://jideafolayanandco.herokuapp.com"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
+            </a>
+          </div>
         </div>
       </div>
       <!-- Card End -->
@@ -185,20 +192,23 @@
             I developed this app using Vanilla JavaScript, HTML and CSS.
           </p>
           <!-- Porject Links  -->
-          <a
-              href="https://github.com/unclebay143/vanilla-javascript-todo-list-with-animation"
+          <div class="todo-links">
+
+            <a
+                href="https://github.com/unclebay143/vanilla-javascript-todo-list-with-animation"
+                class="project-link"
+                target="_blank"
+                >
+              <i class="fa fa-github todo-link" aria-hidden="true"> View Code</i>
+            </a>
+            <a 
+              href="https://todo-list-by-unclebay143.netlify.app/"
               class="project-link"
               target="_blank"
               >
-            <i class="fa fa-github todo-link" aria-hidden="true"> View Code</i>
-          </a>
-          <a 
-            href="https://todo-list-by-unclebay143.netlify.app/"
-            class="project-link"
-            target="_blank"
-            >
-            <i class="fas fa-sitemap right-icon todo-link" aria-hidden="true"> Visit Site</i>
-          </a>
+              <i class="fas fa-sitemap right-icon todo-link" aria-hidden="true"> Visit Site</i>
+            </a>
+          </div>
         </div>
       </div>
      <!-- Card End -->
@@ -235,21 +245,24 @@
                 This is a mini e-commerce website, as demanded by the customer to serve as a showroom for her cake. <br>
                 To enable her customer come and check her new cakes out.
             </p>
-            <a
-                href="https://github.com/unclebay143/gfcakes"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fa fa-github cake-link" aria-hidden="true"> View Code</i>
+            <div class="cake-links">
 
-            </a>
-            <a
-                href="http://unclebay143.pythonanywhere.com/"
-                class="project-link"
-                target="_blank"
-                >
-              <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
-            </a>
+              <a
+                  href="https://github.com/unclebay143/gfcakes"
+                  class="project-link"
+                  target="_blank"
+                  >
+                <i class="fa fa-github cake-link" aria-hidden="true"> View Code</i>
+  
+              </a>
+              <a
+                  href="http://unclebay143.pythonanywhere.com/"
+                  class="project-link"
+                  target="_blank"
+                  >
+                <i class="fas fa-sitemap right-icon" aria-hidden="true"> Visit Site</i>
+              </a>
+            </div>
           </div>
         </div>
       <!-- Card End -->
@@ -595,7 +608,7 @@
   <div class="footer-container">
     <!-- My Social Links Section -->
     <div class="my_links">
-      <h4>Connect with me</h4>
+      <h4 id="social-links">Connect with me</h4>
       <ul>
         <li><a href="https://www.facebook.com/unclebay"><img src="../assets/img/facebook.svg" class="social-link">Facebook</a></li>
         <li><a href="https://www.github.com/unclebay143"> <img src="../assets//img/github.svg" class="social-link"> Github</a></li>
@@ -624,7 +637,7 @@
     <div class="more-contact">
       <p><b>Phone</b>: +234- 80 8382 6262</p>
       <p><b>Resume</b>: <a href="#" class="my_resume">Download</a></p>
-      <p><b>E-mail</b> Address: ayodelesamueladebayo143@gmail.com</p>
+      <p><b>E-mail</b>: ayodelesamueladebayo143@gmail.com</p>
       <p><b>Address</b>: Bako, Gwagwalada, Abuja</p>
     </div>
     <!-- Link Section End -->
